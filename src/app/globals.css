@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --font-petrona: 'Petrona', serif;
+  --font-manrope: 'Manrope', sans-serif;
+}
+
+h1 {
+    font-family: var(--font-petrona);
+}
+
+h3 {
+    font-family: var(--font-petrona);
+}
+
+p {
+    font-family: var(--font-petrona);
+}
+
+h2 {
+    font-family: var(--font-manrope);
+}
+
+
+
+
