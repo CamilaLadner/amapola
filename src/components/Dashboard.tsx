@@ -3,7 +3,6 @@
 import { useAuth } from "@/context/AuthContext";
 import Link from "next/link";
 import React from "react";
-import LogoutButton from "./LogoutButton";
 
 const DashboardView = () => {
   const { userData } = useAuth();

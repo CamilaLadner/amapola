@@ -43,7 +43,7 @@ const LoginView = () => {
     toast.success(`¡Bienvenido, ${user.name}! 🌼`);
 
     router.push('/');
-  } catch (error) {
+  } catch (_) {
     toast.dismiss();
     toast.error("Credenciales incorrectas 😔");
   }

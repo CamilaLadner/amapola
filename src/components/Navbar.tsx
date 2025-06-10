@@ -5,10 +5,11 @@ import Link from "next/link";
 import { ShoppingBag, User} from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import LogoutButton from "./LogoutButton";
+import Image from "next/image";
 
 export default function Navbar() {
   const { userData } = useAuth();
-  const [cartItemCount, setCartItemCount] = useState(0);
+  const [cartItemCount] = useState(0);
 
   const routes = [
     { href: "/", label: "Inicio" },
@@ -21,7 +22,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <div className="flex items-center text-xl font-light tracking-wide overflow-hidden">
-          <img
+          <Image
             src="/AmapolaLogo.png"
             alt="Logo"
             className="h-8 w-8 mr-2 mix-blend-multiply bg-transparent mask mask-circle"
