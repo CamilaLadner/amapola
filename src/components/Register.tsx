@@ -37,7 +37,7 @@ const RegisterView = () => {
               await register(values);
               toast.success("Registro exitoso 🎉");
               setTimeout(() => router.push("/login"), 1500);
-            } catch (err) {
+            } catch (_) {
               toast.error("Ups! Ocurrió un error.");
             }
           }}
